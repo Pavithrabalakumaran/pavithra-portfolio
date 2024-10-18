@@ -3,7 +3,7 @@ import { Link } from "react-scroll"; // Use Link from react-scroll for smooth sc
 import "./style.css";
 
 const Header = () => (
-  <header>
+  
     <nav>
       <div className="header-design"> {/* Changed class to className */}
         <h1 className="portfolio-name">PAVITHRA SRI BHAVANI CC</h1>
@@ -66,7 +66,7 @@ const Header = () => (
         </ul>
       </div>
     </nav>
-  </header>
+
 );
 
 export default Header;
