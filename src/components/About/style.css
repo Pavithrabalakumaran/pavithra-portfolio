@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header Styling */
+ 
+  
+  /* About Container Styling */
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Full viewport height for the container */
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 2rem;
+    padding-top: 15vh; /* Space for the header */
+  }
+  
+  /* Profile Image Styling */
+  .profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    order: 2; /* On smaller screens, image comes after the text */
+  }
+  
+  .profile-pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.05);
+  }
+  
+  /* About Section Styling */
+  .about-section {
+    text-align: center;
+    max-width: 600px;
+    order: 1; /* Text comes before the image on smaller screens */
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: white;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .overview{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1px;
+    color:#f0db4f;
+    margin-top: 5rem;
+  }
+  
+  .name {
+    color: yellow;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (min-width: 768px) {
+    .about-container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .profile-image {
+      order: 1; /* Keep the image on the right on larger screens */
+      margin-bottom: 0;
+    }
+  
+    .about-section {
+      order: 2; /* Text on the left */
+      text-align: left;
+    }
+  
+    .about-description {
+      font-size: 1.3rem;
+    }
+  
+    .name {
+      color: yellow;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .profile-pic {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .about-description {
+      font-size: 1.5rem;
+    }
+  
+    .name {
+      color: yellow;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+  
+  .skills-container {
+    max-width: 75rem;
+    margin: 15rem auto; /* Margin for spacing between sections */
+    padding: 2rem;
+    background-color:transparent;
+    text-align: center;
+  }
+
+  @media screen and (min-width:200px) {
+    .skills-container {
+        margin: auto;
+    }
+  }
+  
+  .skills-heading {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #f0db4f;
+    margin-top: 5rem;
+  }
+  
+  .skill-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+  }
+  
+  .skill-bar span {
+    flex: 1;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .progress {
+    flex: 3;
+    background-color: #333;
+    border-radius: 10px;
+    margin-left: 1rem;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 25px;
+    border-radius: 10px;
+  }
+  
+  .html { width: 100%; background-color: #f0db4f; }
+  .css { width: 100%; background-color: #f0db4f; }
+  .js { width: 80%; background-color: #f0db4f; }
+  .python { width: 75%; background-color: #f0db4f; }
+  .sql { width: 80%; background-color: #f0db4f; }
+  .node { width: 70%; background-color: #f0db4f; }
+  .express { width: 70%; background-color: #f0db4f; }
+  .react { width: 85%; background-color: #f0db4f; }
+  
+  @media (min-width: 768px) {
+    .about-container {
+      flex-direction: column; /* Ensure it stays in column layout */
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .about-section {
+      text-align: center; /* Center text on larger screens */
+    }
+  
+    .about-description {
+      font-size: 1.3rem;
+    }
+  
+    .name {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .profile-pic {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .about-description {
+      font-size: 1.5rem;
+    }
+  
+    .name {
+      font-size: 1.6rem;
+    }
+  }
+
+  .skill-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.skill-bar span {
+    flex: 1;
+    font-weight: bold;
+    color: white;
+}
+
+.progress {
+    flex: 3;
+    background-color: #333;
+    border-radius: 10px;
+    margin-left: 1rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 25px;
+    border-radius: 10px;
+}
+
+.percentage {
+    flex: 0.5; /* Adjust flex to take space for the percentage */
+    color: white; /* Color for the percentage text */
+    font-weight: bold;
+    text-align: left; 
+    margin-left: 15px;/* Align percentage to the left */
+}
+
+/* Skill widths */
+.html { width: 100%; background-color: #f0db4f; }
+.css { width: 90%; background-color: #f0db4f; }
+.js { width: 80%; background-color: #f0db4f; }
+.python { width: 75%; background-color: #f0db4f; }
+.sql { width: 80%; background-color: #f0db4f; }
+.node { width: 70%; background-color: #f0db4f; }
+.express { width: 70%; background-color: #f0db4f; }
+.react { width: 85%; background-color: #f0db4f; }
+
+ .about-me{
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+ }

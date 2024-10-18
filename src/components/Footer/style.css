@@ -1,0 +1,51 @@
+/* Footer Styling */
+.footer-container {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-container .social-links {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-container .social-icon {
+    margin: 0 15px;
+    font-size: 3rem;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-container .social-icon:hover {
+    color: #f0db4f; /* Hover effect color */
+  }
+
+.social-icon:hover {
+  color: yellow; /* Change color on hover or focus */
+}
+
+
+.social-icon:focus {
+  color: yellow; /* Change color on hover or focus */
+}
+
+  
+  .footer-container .footer-text {
+    font-size: 1rem;
+    color: #bbb;
+    margin-top: 0.5rem;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .footer-container .social-icon {
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+  }
+  
