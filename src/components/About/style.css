@@ -125,7 +125,7 @@
   
   .skills-container {
     max-width: 75rem;
-    margin: 15rem auto; /* Margin for spacing between sections */
+    margin: 15rem; /* Margin for spacing between sections */
     padding: 2rem;
     background-color:transparent;
     text-align: center;
@@ -142,7 +142,7 @@
     font-weight: bold;
     margin-bottom: 2rem;
     color: #f0db4f;
-    margin-top: 5rem;
+    margin-top: 15rem;
   }
   
   .skill-bar {

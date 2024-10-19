@@ -5,10 +5,10 @@
     padding: 1rem 2rem;
     margin: 0 auto;
     max-width: 75rem;
-    position: sticky;
+    position:sticky;
     color: white;
     height: 5rem;
-    width: 100%;
+    width: 100vw;
     z-index: 3;
     background-color: #333;
   }
