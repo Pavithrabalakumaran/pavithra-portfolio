@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import "./style.css";
 
 import image from "../../DSC_0009 copy.jpg";
-import resume from "../../Pavithra_Resume_new.pdf";
+import resume from "../../Pavithra_resume_1.pdf";
 
 const LandingPage = () => {
   const titles = [
