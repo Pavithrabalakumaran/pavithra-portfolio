@@ -32,7 +32,7 @@ const Footer = () => {
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>
-      <p className="footer-text">© 2024 Pavithra Sri Bhavani. All Rights Reserved.</p>
+      <p className="footer-text">© 2025 Pavithra Sri Bhavani. All Rights Reserved.</p>
     </footer>
   );
 };

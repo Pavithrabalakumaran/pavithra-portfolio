@@ -5,6 +5,8 @@ import covid from "../../covid.jfif"
 import todo from "../../todo.jfif"
 import netflix from "../../netflix.png"
 import goa from "../../goa.jfif"
+import digilearn from "../../digilearn.jpg"
+import cslogo from "../../cslogo.svg"
 
 const Projects = () => {
   return (
@@ -13,6 +15,29 @@ const Projects = () => {
         <h2 className="projects-heading">Projects</h2>
 
         <div className="projects-grid">
+
+        <div className="project-card">
+            <img src={cslogo} className="project-image" alt="DigiLearn" />
+            <h3 className="project-title">ClinixSphere</h3>
+            <p className="project-description">
+            Designed and implemented a fully responsive healthcare company portfolio website from Figma wireframes iwhich also includes a blog section with full CRUD operations and pagination for both admins and users.
+
+
+            </p>
+            <a href="https://www.clinixsphere.in/" className="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+
+        <div className="project-card">
+            <img src={digilearn} className="project-image" alt="DigiLearn" />
+            <h3 className="project-title">DigiLearn</h3>
+            <p className="project-description">
+            DigiLearn is an online learning platform designed to help users to acquire new skills. The UI is designed for ease of navigation, allowing to select courses based on their interests.
+
+
+            </p>
+            <a href="https://digi-learn-two.vercel.app/" className="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+
           <div className="project-card">
             <img src={zomato} className="project-image" alt="Zomato" />
             <h3 className="project-title">Zomato Clone</h3>

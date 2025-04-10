@@ -1,0 +1,211 @@
+.experience-section {
+  background-color: #1a1a1a;
+  padding: 3rem 1rem;
+  color: white;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+.experience-intro {
+  text-align: center;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.experience-card h3 {
+  color: #ffd700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card .position {
+  color: #00ffff;
+  font-weight: 600;
+}
+
+.experience-card .duration {
+  color: #ffa07a;
+}
+
+.experience-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.experience-card {
+  background: #2c2c2c;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: scale(1.02);
+}
+
+.position {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+
+.linkedin-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #1da1f2;
+  margin-bottom: 1rem;
+}
+
+.experience-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.exp-btn {
+  background: #ffd700;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.exp-btn:hover {
+  background: #ffcc00;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: white;
+  color: #000;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+  line-height: 1.6;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeInScale 0.4s ease-out forwards;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInScale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Modal Inner Elements */
+.modal-content h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal-content strong {
+  color: #000;
+  font-weight: 600;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+.modal-content {
+  background: white;
+  color: #000; /* Ensure black text */
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+  line-height: 1.6;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.bullet-points{
+  color: black;
+}

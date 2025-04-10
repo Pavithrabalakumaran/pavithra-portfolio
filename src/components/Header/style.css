@@ -1,84 +1,140 @@
-.header-design {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    margin: 0 auto;
-    max-width: 75rem;
-    position:sticky;
-    color: white;
-    height: 5rem;
-    width: 100vw;
-    z-index: 3;
-    background-color: #333;
-  }
-  
+/* Background with gradient */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  width: 100%;
+}
+
+/* Header layout */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+/* Name/Logo */
+
+
+/* Portfolio name with responsive size and hover effect */
+.portfolio-name {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 2rem; /* base size */
+  font-weight: 700;
+  color: #fff;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.portfolio-name:hover {
+  color: #ffcc00; /* golden yellow on hover */
+}
+
+/* Responsive text sizes */
+@media (max-width: 1024px) {
   .portfolio-name {
-    font-family: "Segoe UI", sans-serif;
     font-size: 1.8rem;
-    font-weight: bold;
-    flex: 1;
-    color: white;
   }
-  
-  .features-section {
-    display: flex;
-    list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  .portfolio-name {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-name {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-item-name {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #ffcc00;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ffcc00;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1f1c2c;
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
     gap: 1.5rem;
   }
-  
-  .links-section {
-    font-size: 1rem;
-    font-family: "Segoe UI", sans-serif;
-    list-style-type: none;
+
+  #menu-toggle:checked + .hamburger + .nav-links {
     display: flex;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
   }
-  
-  .links-section:hover {
-    color: yellow;
-    cursor: pointer;
-    border-bottom: 2px solid yellow;
-  }
-  
+
   .hamburger {
-    display: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
+    display: block;
   }
-  
-  #menu-toggle {
-    display: none;
+
+  .nav-item {
+    text-align: center;
+    width: 100%;
   }
-  
-  @media (max-width: 768px) {
-    .features-section {
-      display: none;
-      flex-direction: column;
-      background-color: #333;
-      position: absolute;
-      top: 5rem;
-      right: 0;
-      width: 100%;
-      padding: 1rem;
-    }
-  
-    #menu-toggle:checked + .features-section {
-      display: flex;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-  
-    .links-section {
-      padding: 1rem;
-      width: 100%;
-      text-align: center;
-    }
-  }
-  
+}

@@ -4,6 +4,7 @@ import About from "../src/components/About"
 import Projects from "../src/components/ProjectsSection"
 import Contact from "../src/components/ContactDetails";
 import Footer from "../src/components/Footer"
+import Experience from "./components/Experience";
 
 
 const App = () => (
@@ -11,6 +12,7 @@ const App = () => (
   <Header/>
   <LandingPage/>
   <About/>
+  <Experience/>
   <Projects/>
   <Contact/>
   <Footer/>
